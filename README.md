@@ -12,6 +12,12 @@ Voice commands can be sent to the webserver via a `POST` request to the `/speak`
 
 All that needs to be done is to install the node dependencies via `npm install`, and to make sure the public folder is writable. 
 
+Then start via
+
+	node index.js
+	
+You can check in the console whether Sonos devices were found.
+
 Feel free to explore and experiment :)
 
 ### Licence
