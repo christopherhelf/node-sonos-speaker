@@ -1,0 +1,19 @@
+{
+  "name": "airsonosspeak",
+  "version": "1.0.0",
+  "description": "Simple Mac-OSX based TTS module to play voice on sonos devices",
+  "main": "index.js",
+  "dependencies": {
+  	"nodetunes": "latest",
+    "sonos": "git://github.com/stephen/node-sonos.git#stephen-1.0.0",
+    "express" : "latest",
+    "body-parser" : "latest",
+    "say" : "latest",
+    "node-uuid" : "latest",
+    "ip": "0.3.2",
+    "cookie-jar" : "latest",
+    "async" : "latest"
+  },
+  "author": "Helf Christopher",
+  "license": "MIT"
+}
