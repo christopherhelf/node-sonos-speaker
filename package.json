@@ -12,7 +12,8 @@
     "node-uuid" : "latest",
     "ip": "0.3.2",
     "cookie-jar" : "latest",
-    "async" : "latest"
+    "async" : "latest",
+    "underscore" : "latest"
   },
   "author": "Helf Christopher",
   "license": "MIT"

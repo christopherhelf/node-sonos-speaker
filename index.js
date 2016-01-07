@@ -56,6 +56,10 @@ app.post('/speak', function(req, res) {
 				fs.unlinkSync(path + "/" + filename);
 			}, 10000);
 
+			if(err) {
+				return res.status(400).send(err);
+			}
+
 			// Return success
 			return res.json({ status: "OK" })
 		});

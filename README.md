@@ -2,9 +2,9 @@
 
 ### Description
 
-Based on the fantastic [node-sonos](https://github.com/bencevans/node-sonos) repository, this project outputs voice commands into all available Sonos speakers via a REST Api on a local network. The project currently only works on MacOSX via the `say` command, where it's output is piped into Sonos-compatible format and made available via a webserver. When music is currently played on a Sonos device, it is paused first, then the voice is played, and then resumed again. Volume is also adjusted according to a default level. 
+Based on the fantastic [node-sonos](https://github.com/bencevans/node-sonos) repository, this project outputs voice commands into all available Sonos speakers via a REST Api on a local network. The project currently only works on MacOSX via the `say` command, where it's output is piped into Sonos-compatible format and made available via a webserver. When music is currently played on a Sonos device, it is faded-out first, then the voice is played, and then resumed again. Volume is also adjusted according to a default level. 
 
-Voice commands can be sent to the webserver via a `POST` request to the `/speak` route, which expects a text key containing a string with the text to be spoken. Further adjustments could be made on which Sonos device voices should be played etc. Probably another check should be made whether the playmode is put the repeat, as I'm currently checking whether the voice file has finished playing in regular intervals (maybe there's a better way?).
+Voice commands can be sent to the webserver via a `POST` request to the `/speak` route, which expects a text key containing a string with the text to be spoken. Further adjustments could be made on which Sonos device voices should be played etc. 
 
 [Express](http://expressjs.com/) is used as webserver, and [node-sonos](https://github.com/bencevans/node-sonos) for commiting commands to Sonos devices.
 
